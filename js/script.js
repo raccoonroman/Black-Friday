@@ -1,11 +1,11 @@
 // Set the date we're counting down to
-var countDownDate1 = new Date("Nov 13, 2018 22:22:00").getTime();
-var countDownDate2 = new Date("Nov 14, 2018 17:27:00").getTime();
-var countDownDate3 = new Date("Nov 15, 2018 07:35:10").getTime();
-var countDownDate4 = new Date("Nov 15, 2018 13:12:11").getTime();
-var countDownDate5 = new Date("Nov 16, 2018 10:09:08").getTime();
-var countDownDate6 = new Date("Nov 16, 2018 07:06:05").getTime();
-var countDownDate7 = new Date("Nov 17, 2018 05:04:03").getTime();
+var countDownDate1 = new Date("Nov 18, 2018 22:22:00").getTime();
+var countDownDate2 = new Date("Nov 20, 2018 17:27:00").getTime();
+var countDownDate3 = new Date("Nov 19, 2018 07:35:10").getTime();
+var countDownDate4 = new Date("Nov 20, 2018 13:12:11").getTime();
+var countDownDate5 = new Date("Nov 20, 2018 10:09:08").getTime();
+var countDownDate6 = new Date("Nov 20, 2018 07:06:05").getTime();
+var countDownDate7 = new Date("Nov 20, 2018 05:04:03").getTime();
 var countDownDate8 = new Date("Nov 17, 2018 20:10:55").getTime();
 var countDownDate9 = new Date("Nov 18, 2018 23:00:40").getTime();
 var countDownDate10 = new Date("Nov 18, 2018 18:18:18").getTime();
@@ -64,25 +64,25 @@ var x = setInterval(function() {
   // var seconds = Math.floor((distance2 % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  document.getElementById("js-timer-1").innerHTML = getHours(distance1) + ":" + getMinutes(distance1) + ":" + getSeconds(distance1);
+  document.getElementById("js-timer-1").innerHTML = getHours(distance1) + ":" + getMinutes(distance1) + ":" + (getSeconds(distance1) >= 10 ? getSeconds(distance1) : '0' + getSeconds(distance1));
 
-  document.getElementById("js-timer-2").innerHTML = getHours(distance2) + ":" + getMinutes(distance2) + ":" + getSeconds(distance2);
+  document.getElementById("js-timer-2").innerHTML = getHours(distance2) + ":" + getMinutes(distance2) + ":" + (getSeconds(distance2) >= 10 ? getSeconds(distance2) : '0' + getSeconds(distance2));
 
-  document.getElementById("js-timer-3").innerHTML = getHours(distance3) + ":" + getMinutes(distance3) + ":" + getSeconds(distance3);
+  document.getElementById("js-timer-3").innerHTML = getHours(distance3) + ":" + getMinutes(distance3) + ":" + (getSeconds(distance3) >= 10 ? getSeconds(distance3) : '0' + getSeconds(distance3));
 
-  document.getElementById("js-timer-4").innerHTML = getHours(distance4) + ":" + getMinutes(distance4) + ":" + getSeconds(distance4);
+  document.getElementById("js-timer-4").innerHTML = getHours(distance4) + ":" + getMinutes(distance4) + ":" + (getSeconds(distance4) >= 10 ? getSeconds(distance4) : '0' + getSeconds(distance4));
 
-  document.getElementById("js-timer-5").innerHTML = getHours(distance5) + ":" + getMinutes(distance5) + ":" + getSeconds(distance5);
+  document.getElementById("js-timer-5").innerHTML = getHours(distance5) + ":" + getMinutes(distance5) + ":" + (getSeconds(distance5) >= 10 ? getSeconds(distance5) : '0' + getSeconds(distance5));
 
-  document.getElementById("js-timer-6").innerHTML = getHours(distance6) + ":" + getMinutes(distance6) + ":" + getSeconds(distance6);
+  document.getElementById("js-timer-6").innerHTML = getHours(distance6) + ":" + getMinutes(distance6) + ":" + (getSeconds(distance6) >= 10 ? getSeconds(distance6) : '0' + getSeconds(distance6));
 
-  document.getElementById("js-timer-7").innerHTML = getHours(distance7) + ":" + getMinutes(distance7) + ":" + getSeconds(distance7);
+  document.getElementById("js-timer-7").innerHTML = getHours(distance7) + ":" + getMinutes(distance7) + ":" + (getSeconds(distance7) >= 10 ? getSeconds(distance7) : '0' + getSeconds(distance7));
 
-  document.getElementById("js-timer-8").innerHTML = getHours(distance8) + ":" + getMinutes(distance8) + ":" + getSeconds(distance8);
+  document.getElementById("js-timer-8").innerHTML = getHours(distance8) + ":" + getMinutes(distance8) + ":" + (getSeconds(distance8) >= 10 ? getSeconds(distance8) : '0' + getSeconds(distance8));
 
-  document.getElementById("js-timer-9").innerHTML = getHours(distance9) + ":" + getMinutes(distance9) + ":" + getSeconds(distance9);
+  document.getElementById("js-timer-9").innerHTML = getHours(distance9) + ":" + getMinutes(distance9) + ":" + (getSeconds(distance9) >= 10 ? getSeconds(distance9) : '0' + getSeconds(distance9));
 
-  document.getElementById("js-timer-10").innerHTML = getHours(distance10) + ":" + getMinutes(distance10) + ":" + getSeconds(distance10);
+  document.getElementById("js-timer-10").innerHTML = getHours(distance10) + ":" + getMinutes(distance10) + ":" + (getSeconds(distance10) >= 10 ? getSeconds(distance10) : '0' + getSeconds(distance10));
 
   // If the count down is finished, write some text 
   if (distance1 < 0) {
