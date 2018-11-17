@@ -1,0 +1,456 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Tahoma", sans-serif;
+	min-width: 320px;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+
+
+
+
+.main-black-friday {
+	margin: 0;
+	padding: 50px 7.5% 20%;
+	box-sizing: border-box;
+	background-color: #c69b5c;
+	background-image: 
+		url("https://audioplugin.deals/wp-content/uploads/2018/11/coins.png"), 
+		url('https://audioplugin.deals/wp-content/uploads/2018/11/bg-main.jpg');
+	background-position: left bottom, center top;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 100% auto, cover;
+}
+
+
+.products__text-wrapper {
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+	margin-bottom: 12px;
+	border-radius: 100px;
+	background-color: rgba(255,224,149,0.5);
+	background-color: rgba(245,223,110, .6);
+	box-shadow: 0 0 72px 36px rgba(255,224,149,0.5);
+	box-shadow: 0 0 72px 36px rgba(245,223,110, .6);
+}
+
+.products__text-title {
+	margin: 0;
+	font-size: 17px;
+	line-height: 25px;
+	font-weight: 600;
+}
+
+.products__text-desc {
+	margin: 0;
+	font-size: 17px;
+	line-height: 25px;
+}
+
+.products-list {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.products-list::before {
+	content: "";
+	position: absolute;
+	top: -3px;
+	left: -30px;
+	height: 4px;
+	width: 106%;
+	background: transparent url('https://audioplugin.deals/wp-content/uploads/2018/11/line-horizontal.png') center no-repeat;
+}
+
+.products-list::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: -30px;
+	height: 4px;
+	width: 106%;
+	background: transparent url('https://audioplugin.deals/wp-content/uploads/2018/11/line-horizontal.png') center no-repeat;
+}
+
+.ul-border-bottom {
+	margin-left: -30px;
+	height: 4px;
+	width: 106%;
+	background: transparent url('https://audioplugin.deals/wp-content/uploads/2018/11/line-horizontal.png') center no-repeat;
+}
+
+.product-item {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	width: calc(100%/5);
+	height: 282px;
+}
+
+
+
+/*vertical line*/
+.product-item:nth-child(1)::before,
+.product-item:nth-child(2)::before,
+.product-item:nth-child(5)::before{
+	content: url('https://audioplugin.deals/wp-content/uploads/2018/11/line-vertical-1.png');
+	position: absolute;
+	top: -96px;
+	left: -2px;
+}
+
+.product-item:nth-child(3)::before,
+.product-item:nth-child(4)::before {
+	content: url('https://audioplugin.deals/wp-content/uploads/2018/11/line-vertical-3.png');
+	position: absolute;
+	top: -2px;
+	left: -2px;
+}
+
+.product-item:nth-child(5)::after {
+	content: url('https://audioplugin.deals/wp-content/uploads/2018/11/line-vertical-1.png');
+	position: absolute;
+	top: -96px;
+	right: -4px;
+}
+
+
+
+.product-item__title {
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+.product-item__img {
+	margin: auto;
+}
+
+.product-item__discount {
+	position: absolute;
+	left: 10px;
+	top: 25%;
+	margin: 0;
+	padding: 20px 0;
+	width: 72px;
+	height: 72px;
+	text-align: center;
+	font-size: 17px;
+	line-height: 17px;
+	color: #fff;
+	background-color: #ed1c24;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	box-shadow: 0 0 0 2px #ed1c24;
+}
+
+.product-item__discount span:nth-child(1) {
+	margin-left: 6px;
+	font-size: 33px;
+	font-weight: 700;
+}
+
+.product-item__discount span:nth-last-child(1) {
+	display: block;
+	margin-left: -6px;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.product-item__price {
+	position: absolute;
+	width: 173px;
+	margin: 0;
+	bottom: 10px;
+	right: 0;
+	padding-right: 6px;
+	text-align: right;
+	font-size: 38px;
+	font-weight: 700;
+	color: #ffe4ba;
+	text-shadow: 0px 0px 12.35px rgba(0, 0, 0, 0.49);
+	background: #a15d0e;
+	background: linear-gradient(to right, transparent, #a15d0e 30%)
+}
+
+.product-item a {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	padding: 0 10%;
+	text-align: center;
+	font-size: 25px;
+	font-weight: 700;
+	color: #000;
+	opacity: 0;
+	transition: all .3s;
+}
+
+.product-item a span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+}
+
+.product-item a:hover,
+.product-item a:focus {
+	background-color: rgba(255,255,255, .7);
+	opacity: 1;
+}
+
+
+.product-item--unlock .lock-img,
+.product-item--unlock .lock-text,
+.product-item--unlock .lock-time {
+	display: none;
+}
+
+.product-item--lock * {
+	display: none;
+}
+
+.product-item--lock .lock-img {
+	display: block;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+.product-item--lock .lock-text {
+	display: block;
+	margin: 0;
+	text-align: center;
+	font-weight: 500;
+	font-size: 25.5px;
+	line-height: 26px;
+}
+
+.product-item--lock .lock-time {
+	margin: 0;
+	display: block;
+	text-align: center;
+	font-size: 40px;
+	font-weight: 600;
+	line-height: 42px;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 1600px) {
+	.product-item:nth-child(1)::before {
+		content: "";
+	}
+
+	.product-item:nth-child(5)::after {
+		content: "";
+	}
+}
+
+@media (max-width: 1400px) {
+	.main-black-friday {
+		background-image: 
+			url("https://audioplugin.deals/wp-content/uploads/2018/11/coins.png"), 
+			url('https://audioplugin.deals/wp-content/uploads/2018/11/bg-middle.jpg');
+	}
+}
+
+@media (max-width: 1200px) {
+	.product-item--lock .lock-time {
+		font-size: 25.5px;
+		line-height: 26px;
+	}
+
+	.product-item a {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.products__text-wrapper {
+		width: 90%;
+	}
+
+	.product-item:nth-child(2)::before,
+	.product-item:nth-child(5)::before {
+		content: url('https://audioplugin.deals/wp-content/uploads/2018/11/line-vertical-3.png');
+		position: absolute;
+		top: -2px;
+		left: -2px;
+	}
+
+	.product-item__price {
+		width: 120px;
+		font-size: 24px;
+	}
+
+	.products-list::before,
+	.products-list::after {
+		left: -24px;
+	}
+
+	.ul-border-bottom {
+		margin-left: -24px;
+	}
+}
+
+
+@media (max-width: 1024px) {
+	.products-list {
+		border: 2px solid #181710;
+	}
+
+	.products-list::before,
+	.products-list::after,
+	.ul-border-bottom {
+		height: 0;
+		width: 0;
+		background: transparent;
+	}
+
+	.product-item {
+		width: calc(100%/2);
+		border: 2px solid #181710;
+	}
+
+	.product-item:nth-child(1)::before,
+	.product-item:nth-child(2)::before,
+	.product-item:nth-child(5)::before,
+	.product-item:nth-child(3)::before,
+	.product-item:nth-child(4)::before,
+	.product-item:nth-child(5)::after {
+		content: "";
+	}
+
+	.product-item__price {
+		width: 173px;
+		font-size: 38px;
+	}
+
+	.product-item--lock .lock-time {
+		font-size: 40px;
+		line-height: 42px;
+	}
+
+	.products__text-wrapper {
+		width: 100%;
+	}
+}
+
+@media (max-width: 600px) {
+
+	.product-item {
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+
+.deal {
+	color: #fff;
+	background-color: #18100d;
+}
+
+.deal__list {
+	margin: 0;
+	padding: 50px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.deal__item {
+	width: 30%;
+	margin-bottom: 6px;
+	margin-left: 5%;
+	font-size: 17px;
+	line-height: 25px;
+}
+
+@media (min-width: 1025px) {
+	.deal__item:nth-child(1) {
+		order: 1;
+	}
+	.deal__item:nth-child(2) {
+		order: 3;
+	}
+	.deal__item:nth-child(3) {
+		order: 5;
+	}
+	.deal__item:nth-child(4) {
+		order: 7;
+	}
+	.deal__item:nth-child(5) {
+		order: 9;
+	}
+	.deal__item:nth-child(6) {
+		order: 2;
+	}
+	.deal__item:nth-child(7) {
+		order: 4;
+	}
+	.deal__item:nth-child(8) {
+		order: 6;
+	}
+	.deal__item:nth-child(9) {
+		order: 8;
+	}
+	.deal__item:nth-child(10) {
+		order: 10;
+	}
+}
+
+@media (max-width: 1024px) {
+	.deal__item {
+		width: 100%;
+		margin-left: 0;
+		text-align: center;
+	}
+}
